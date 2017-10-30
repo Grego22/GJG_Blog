@@ -56,9 +56,27 @@
 
     <ul>
       <li class "Social"></li>
-      
+
     </ul>
 
+    <p class="sign_in"></p>
+  </div>
+
+  <div id="main_content">
+    <div id="header">
+      <p>All Posts</p>
+
+      <div class="buttons">
+        <button class="button"><%= link_to "New Post", new_post_path %></button>
+        <button class="button">Log Out</button>
+      </div>
+    </div>
+
+    <% flash.each do |name, msg| %>
+      <%= content_tag(:div, msg, class: "alert")%>
+    <% end %>
+    
+    <%= yield %>
   </div>
   <div class="container">
     <% flash.each do |name, msg| %>
@@ -68,7 +86,6 @@
       <% end %>
     <% end %>
 
-    <%= yield %>
   </div>
 </body>
 </html>
