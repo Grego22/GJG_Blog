@@ -40,6 +40,15 @@
       </div>
     </div>
   </nav>
+  <div id="sidebar">
+    <div id="logo">
+      <%= link_to root_path do %>
+        <%= image_tag "" %>
+      <% end %>
+
+    </div>
+
+  </div>
   <div class="container">
     <% flash.each do |name, msg| %>
       <%= content_tag :div, class: "alert alert-#{ name == :error ? "danger" : "success" } alert-dismissable", role: "alert" do %>
