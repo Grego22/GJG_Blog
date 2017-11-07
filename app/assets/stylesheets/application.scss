@@ -19,11 +19,17 @@
 @import 'bootstrap-variables';
 @import 'normalize';
 
-html, body {
+html,
+body {
 	font-family: 'Raleway', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-weight: 500;
 }
 
@@ -99,17 +105,17 @@ a {
 }
 
 .clearfix:after {
-   content: ".";
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
 }
 
 #main_content {
 	margin-left: 250px;
 	#header {
-		padding: 1em 3em;
+		padding: 3em 4em;
 		border-bottom: 1px solid #d6dce0;
 		background: #f5f7f9;
 		color: #9eafba;
@@ -204,7 +210,8 @@ a {
 					float: right;
 				}
 			}
-			input[type="text"], textarea {
+			input[type="text"],
+			textarea {
 				width: 50%;
 			}
 		}
@@ -238,7 +245,10 @@ a {
 	.links {
 		margin: 2em 0;
 	}
-	input[type="text"], input[type="email"], input[type="password"], textarea {
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	textarea {
 		width: 90%;
 		border: 1px solid #d6dce0;
 		border-radius: .35em;
@@ -264,5 +274,13 @@ a {
 			border: 1px solid #33acb7;
 			color: #33acb7;
 		}
+	}
+	.post_wrapper p,
+	.show_date {
+		margin-left: 1em;
+	}
+	.post_body {
+		margin-left: 3em;
+		font-family: times, sans-serif;
 	}
 }
